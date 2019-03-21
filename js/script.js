@@ -1,6 +1,6 @@
-var buttonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase;
 
-
+buttonErase = document.getElementById('button-erase');
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
@@ -57,7 +57,9 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
 
-
+buttonErase.addEventListener('click', function(){ 
+  clearMessages('');
+});
 buttonRock.addEventListener('click', function(){ 
 	buttonClicked('kamień'); 
 });

@@ -12,7 +12,7 @@ function buttonClicked(buttonName) {
   console.log(buttonName + ' został kliknięty');
 
 
-var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput, iconRock;
+var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput;
 
 
 	
@@ -37,21 +37,30 @@ function getMoveName(moveId) {
 /**
  * Describe this function...
  */
+
 function displayResult(playerMove, computerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + playerMove + ', ' + computerMove);
   if (playerMove == 'papier' && computerMove == 'kamień') {
     printMessage('Wygrywasz!');
+    document.getElementById("icon-rock").style.color = "#d63031";
   } else if (playerMove == 'kamień' && computerMove == 'nożyce') {
     printMessage('Wygrywasz!');
+    document.getElementById("icon-scissors").style.color = "#d63031";
   } else if (playerMove == 'nożyce' && computerMove == 'papier') {
     printMessage('Wygrywasz!');
+    document.getElementById("icon-paper").style.color = "#d63031";
   } else if (playerMove == computerMove) {
     printMessage('Remis');
   } else {
     printMessage('Przegrywasz :(');
   }
   printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
+
+
+
 }
+
+
 playerMove = buttonName;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
@@ -60,17 +69,28 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
 
+
+
+
 buttonErase.addEventListener('click', function(){ 
-  clearMessages('');
+  clearMessages();
 });
 buttonRock.addEventListener('click', function(){ 
 	buttonClicked('kamień'); 
+
 });
 buttonPaper.addEventListener('click', function(){ 
 	buttonClicked('papier'); 
+
 });
 buttonScissors.addEventListener('click', function(){ 
 	buttonClicked('nożyce'); 
+ 
 });
+
+
+
+
+
 
 

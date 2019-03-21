@@ -5,5 +5,10 @@ function printMessage(msg){
 }
 
 function clearMessages(){
+	document.getElementById('icon-paper').style.color = '#ecf0f1';
+	document.getElementById('icon-scissors').style.color = '#ecf0f1';
+	document.getElementById('icon-rock').style.color = '#ecf0f1';
 	document.getElementById('messages').innerHTML = '';
+	
 }
+

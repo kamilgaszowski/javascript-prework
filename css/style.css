@@ -15,9 +15,12 @@ body {
   margin: 0 auto;
 }
 
-header i {
+header i[id^="icon-"] {
   margin: 20px 30px;
   font-size: 10em;
+}
+
+#icon-paper, #icon-rock, #icon-scissors {
   color: #ecf0f1;
 }
 

@@ -1,0 +1,90 @@
+*, *::before, *::after {
+	box-size: border-box;
+}
+
+body {
+	font-family: 'Pangolin', cursive;
+	margin: 0;
+	line-height: 1.7;
+	font-size: 16px;
+	text-align: center;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+
+}
+
+
+header i {
+	margin: 20px 30px;
+	font-size: 10em;
+	color: #ecf0f1;
+}
+
+header h1 {
+	font-size: 60px;
+}
+
+.buttons .fa-hand-paper {
+	color: #f3a683;
+}
+
+.buttons .fa-hand-scissors {
+	color: #cf6a87;
+}
+
+.buttons  .fa-hand-rock {
+	color: #c7ecee;
+}
+
+.buttons {
+	margin: 100px 0 20px 0;
+}
+
+.buttons i {
+	margin: 0 20px;
+	font-size: 56px;
+	border: 5px solid;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	transition: 2s;
+}
+
+.buttons i:hover {
+	transform: rotate(360deg) scale(1.1);
+
+
+}
+
+.erase {
+	position: relative;
+}
+
+.messages div:first-child {
+	font-size: 50px;
+}
+
+.messages div:last-child {
+	font-size: 20px;
+}
+
+.fa-eraser {
+	font-size: 100px;
+	color: red;
+	opacity: 0.5;
+	position: fixed;
+	bottom: 20px;
+	left: 120px;
+}
+
+
+.messages i {
+	display: none;
+}
+
+
+
+

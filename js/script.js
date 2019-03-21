@@ -12,7 +12,10 @@ function buttonClicked(buttonName) {
   console.log(buttonName + ' został kliknięty');
 
 
-var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput;
+var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput, iconRock;
+
+
+	
 
 /**
  * Describe this function...
@@ -20,7 +23,7 @@ var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, pl
 function getMoveName(moveId) {
   console.log('wywołano funkcję moveName z argumentem: ' + moveId);
   if (moveId == 1) {
-    return 'kamień';
+    return 'kamień'
   } else if (moveId == 2) {
     return 'papier';
   } else if (moveId == 3) {

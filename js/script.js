@@ -40,15 +40,20 @@ function getMoveName(moveId) {
 
 function displayResult(playerMove, computerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + playerMove + ', ' + computerMove);
+  if (computerMove == 'kamień'){
+    document.getElementById("icon-rock").style.color = "#d63031";
+  } else if (computerMove == 'nożyce') {
+    document.getElementById("icon-scissors").style.color = "#d63031";
+  } else if (computerMove == 'papier') {
+    document.getElementById("icon-paper").style.color = "#d63031";
+  }
+
   if (playerMove == 'papier' && computerMove == 'kamień') {
     printMessage('Wygrywasz!');
-    document.getElementById("icon-rock").style.color = "#d63031";
   } else if (playerMove == 'kamień' && computerMove == 'nożyce') {
     printMessage('Wygrywasz!');
-    document.getElementById("icon-scissors").style.color = "#d63031";
   } else if (playerMove == 'nożyce' && computerMove == 'papier') {
     printMessage('Wygrywasz!');
-    document.getElementById("icon-paper").style.color = "#d63031";
   } else if (playerMove == computerMove) {
     printMessage('Remis');
   } else {

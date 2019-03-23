@@ -10,26 +10,63 @@
 <body>
 	<header>
 		<div class="container">
-			<i id="icon-paper" class="far fa-hand-paper"></i>
-			<i id="icon-scissors" class="far fa-hand-scissors"></i>
-			<i id="icon-rock" class="far fa-hand-rock"></i>
 			<h1>Papier, nożyce, kamień</h1>
-			
+			<div id="buttons" class="buttons">
+				<i id="button-paper" class="fas fa-hand-paper"></i>
+				<i id="button-scissors" class="fas fa-hand-scissors"></i>
+				<i id="button-rock" class="fas fa-hand-rock"></i>
+			</div>
+			<div class="box">
+				<div id="computer" class="big-hands">
+					<h3>Komputer</h3>
+					
+					<i id="icon-paper-comp" class="far fa-hand-paper"></i>
+					<i id="icon-scissors-comp" class="far fa-hand-scissors"></i>
+					<i id="icon-rock-comp" class="far fa-hand-rock"></i>
+					<div class="result">
+							<h4>punkty</h4>
+							<p id="computer-result">0</p>
+					</div>
+				</div>
+				<div id="messages" class="messages"></div>
+				<div id="player" class="big-hands">
+					<h3 id="your-name">Gracz 1</h3>
+					<i id="icon-paper-usr" class="far fa-hand-paper"></i>
+					<i id="icon-scissors-usr" class="far fa-hand-scissors"></i>
+					<i id="icon-rock-usr" class="far fa-hand-rock"></i>
+					<div class="result">
+						<h4>punkty</h4>
+						<p id="player-result">0</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</header>
-	<div class="container">
-		<div id="buttons" class="buttons">
-			<i id="button-paper" class="fas fa-hand-paper"></i>
-			<i id="button-scissors" class="fas fa-hand-scissors"></i>
-			<i id="button-rock" class="fas fa-hand-rock"></i>
-		</div>
-		<div id="messages" class="messages">
-			
-		</div>
+		
+	<div>
+		
 		<div class="erase">
 			<i id="button-erase" class="fas fa-eraser"></i>
+		</div>
+	</div>
+
+	</header>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		
+
+				<input id="name-input" type="text" name="fname" placeholder="Wpisz swoje imię" required>
+				<button id="button-name" type="submit" value="Submit"()>Zapisz</button> 
+		
 		</div>
 	</div>
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
+
+
+
+
+
+
+

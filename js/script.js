@@ -14,13 +14,16 @@ if (document.getElementById("name-input").value.length == 0)
 }
 
 
-var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase, buttonYourName;
+var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase, buttonYourName, buttonCongrat, buttonLoser;
 
-buttonYourName = document.getElementById('button-name');
 buttonErase = document.getElementById('button-erase');
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
+buttonYourName = document.getElementById('button-name');
+buttonCongrat = document.getElementById('button-congrat');
+buttonLoser = document.getElementById('button-loser');
+
 /**
  * Describe this function...
  */
@@ -32,7 +35,7 @@ function buttonClicked(buttonName) {
 var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput, scorePlayer, scoreComputer, addScoreComputer, addScorePlayer;
 
 
-	
+  
 
 /**
  * Describe this function...
@@ -60,7 +63,9 @@ function addOneScorePlayer(addScorePlayer) {
   addScorePlayer = ++ scorePlayer;
   document.getElementById('player-result').innerHTML = addScorePlayer;
   console.log('dodałem ' + addScorePlayer +'pkt dla mnie');
-
+  if (addScorePlayer == 3){
+    openModalCongrat();
+  }
 }
 
 scoreComputer = 0;
@@ -68,6 +73,9 @@ function addOneScoreComputer(addScoreComputer) {
   addScoreComputer = ++ scoreComputer;
   document.getElementById('computer-result').innerHTML = addScoreComputer;
   console.log('dodałem ' + addScoreComputer +'pkt dla computera');
+  if (addScoreComputer == 3){
+    openModalLoser();
+  }
 
 }
 
@@ -131,7 +139,15 @@ displayResult(playerMove, computerMove);
 
 
 
+buttonCongrat.addEventListener('click', function(){ 
+  closeModalCongrat();
+  openModal();
+});
 
+buttonLoser.addEventListener('click', function(){ 
+  closeModalLoser();
+  openModal();
+});
 
 buttonYourName.addEventListener('click', function(){ 
   yourName();
@@ -142,21 +158,14 @@ buttonErase.addEventListener('click', function(){
   openModal();
 });
 buttonRock.addEventListener('click', function(){ 
-	buttonClicked('kamień'); 
+  buttonClicked('kamień'); 
 
 });
 buttonPaper.addEventListener('click', function(){ 
-	buttonClicked('papier'); 
+  buttonClicked('papier'); 
 
 });
 buttonScissors.addEventListener('click', function(){ 
-	buttonClicked('nożyce'); 
+  buttonClicked('nożyce'); 
  
 });
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: 'Pangolin', cursive;
+	font-family: 'Quicksand', sans-serif;
 	margin: 0;
 	line-height: 1.7;
 	font-size: 16px;
@@ -19,7 +19,19 @@ body {
 	margin: 20px 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
+}
+
+.result-box  {
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.result {
+	margin: 0 50px;
+	font-size: 25px;
 }
 
 
@@ -42,7 +54,7 @@ header {
 header h1 {
 	font-size: 60px;
 }
-
+funkcj
 
 .buttons {
 	margin: 100px 0 50px 0;
@@ -180,7 +192,7 @@ header h1 {
 .modal-content input {
 	background-color: transparent;
 	margin: 10px 0;
-	font-family: 'Pangolin', cursive;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 20px;
 	width: 200px;
 	height: 30px;
@@ -205,14 +217,39 @@ header h1 {
 	background-color: #40739e;
 	color: #ffffff;
 	cursor: pointer;
-	font-family: 'Pangolin', cursive;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.7px;
 	border: none;
 }
 
+#modal-congrat, #modal-loser {
+	display: none;
+}
+
+#modal-congrat .modal-content {
+	color: #ffffff;
+	background-color: #16a085;
+}
 
 
+#modal-loser .modal-content{
+	color: #ffffff;
+	background-color: #c0392b;
+}
+
+#modal-congrat .modal-content button {
+	width: 120px;
+	height: 50px;
+	background-color: #1abc9c;
+}
+
+#modal-loser .modal-content button {
+	width: 120px;
+	height: 50px;
+	background-color: #e74c3c;
+	
+}
 
 
 

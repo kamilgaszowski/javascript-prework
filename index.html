@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Pangolin&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<h1>Papier, nożyce, kamień</h1>
+			<h1>Trzy po trzy</h1>
 			<div id="buttons" class="buttons">
 				<i id="button-paper" class="fas fa-hand-paper"></i>
 				<i id="button-scissors" class="fas fa-hand-scissors"></i>
@@ -19,31 +19,38 @@
 			<div class="box">
 				<div id="computer" class="big-hands">
 					<h3>Komputer</h3>
-					
+
 					<i id="icon-paper-comp" class="far fa-hand-paper"></i>
 					<i id="icon-scissors-comp" class="far fa-hand-scissors"></i>
 					<i id="icon-rock-comp" class="far fa-hand-rock"></i>
-					<div class="result">
-							<h4>punkty</h4>
-							<p id="computer-result">0</p>
-					</div>
+					
 				</div>
-				<div id="messages" class="messages"></div>
+				<div id="messages" class="messages">
+					<div>Zagraj ze mna!</div>
+					<div>Gramy do trzech wygranych</div>
+				</div>
 				<div id="player" class="big-hands">
 					<h3 id="your-name">Gracz 1</h3>
 					<i id="icon-paper-usr" class="far fa-hand-paper"></i>
 					<i id="icon-scissors-usr" class="far fa-hand-scissors"></i>
 					<i id="icon-rock-usr" class="far fa-hand-rock"></i>
-					<div class="result">
-						<h4>punkty</h4>
-						<p id="player-result">0</p>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 		
 	<div>
-		
+		<div class="container">
+			<h2>Wynik</h2>
+			<div class="result-box">
+				<div class="result">
+					<p id="computer-result">0</p>
+				</div>
+				<div class="result">
+					<p id="player-result">0</p>
+				</div>
+			</div>
+		</div>
 		<div class="erase">
 			<i id="button-erase" class="fas fa-eraser"></i>
 		</div>
@@ -53,11 +60,22 @@
 
 	<div id="myModal" class="modal">
 		<div class="modal-content">
-		
-
-				<input id="name-input" type="text" name="fname" placeholder="Wpisz swoje imię" required>
-				<button id="button-name" type="submit" value="Submit"()>Zapisz</button> 
-		
+			<input id="name-input" type="text" name="fname" placeholder="Wpisz swoje imię" required>
+			<button id="button-name" type="submit" value="Submit">Zapisz</button> 
+		</div>
+	</div>
+	<div id="modal-congrat" class="modal">
+		<div class="modal-content">
+			<h2>Gratulacje!</h2>
+			<p>Zagraj jeszcze raz!</p>
+			<button id="button-congrat" type="submit" value="Submit">Zagraj jeszcze raz!</button> 
+		</div>
+	</div>
+	<div id="modal-loser" class="modal">
+		<div class="modal-content">
+			<h2>Przegrałeś</h2>
+			<p>Spróbuj jezcze raz!</p>
+			<button id="button-loser" type="submit" value="Submit">Zagraj jeszcze raz!</button> 
 		</div>
 	</div>
 	<script type="text/javascript" src="js/functions.js"></script>

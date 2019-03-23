@@ -23,7 +23,33 @@ function closeModal(){
 }
 
 function openModal (){
+	document.getElementById('player-result').innerHTML = 0;
+	document.getElementById('computer-result').innerHTML = 0;
 	document.getElementById('name-input').value = '';
 	document.getElementById('myModal').style.display = 'block';
 	document.getElementById('your-name').innerHTML = 'Gracz 1';
+}
+
+function closeModalCongrat (){
+	document.getElementById('player-result').innerHTML = 0;
+	document.getElementById('computer-result').innerHTML = 0;
+	document.getElementById('name-input').value = '';
+	document.getElementById('modal-congrat').style.display = 'none';
+	document.getElementById('your-name').innerHTML = 'Gracz 1';
+}
+
+function openModalCongrat(){
+  document.getElementById('modal-congrat').style.display = 'block';
+}
+
+function closeModalLoser (){
+	document.getElementById('player-result').innerHTML = 0;
+	document.getElementById('computer-result').innerHTML = 0;
+	document.getElementById('name-input').value = '';
+	document.getElementById('modal-loser').style.display = 'none';
+	document.getElementById('your-name').innerHTML = 'Gracz 1';
+}
+
+function openModalLoser(){
+  document.getElementById('modal-loser').style.display = 'block';
 }

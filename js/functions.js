@@ -17,7 +17,8 @@ function yourName() {
   name = document.getElementById('your-name').innerHTML = newName;
   
 	if (document.getElementById("name-input").value.length == 0){
-	    openModal();
+	    newName = 'Gracz';
+	    document.getElementById('your-name').innerHTML = newName;
 	} 
 
 } 

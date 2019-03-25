@@ -100,21 +100,17 @@ if (playerMove == 'kamień'){
 
 
   if (playerMove == 'papier' && computerMove == 'kamień') {
-    printMessage('Wygrywasz!');
     addOneScorePlayer();
     console.log('mam ' + scorePlayer +'pkt');
   } else if (playerMove == 'kamień' && computerMove == 'nożyce') {
-    printMessage('Wygrywasz!');
     addOneScorePlayer();
     console.log('mam ' + scorePlayer + 'pkt');
   } else if (playerMove == 'nożyce' && computerMove == 'papier') {
-    printMessage('Wygrywasz!');
     addOneScorePlayer();
     console.log('mam ' + scorePlayer + 'pkt');
   } else if (playerMove == computerMove) {
     printMessage('Remis!');
   } else {
-   printMessage('Przegrywasz :(');
    addOneScoreComputer();
    console.log('komputer ma ' + scoreComputer + 'pkt'); 
   }

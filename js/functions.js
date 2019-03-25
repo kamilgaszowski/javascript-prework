@@ -57,7 +57,7 @@ function closeModalCongrat (){
 
 function openModalCongrat(){
   	document.getElementById('modal-congrat').style.display = 'block';
-  	document.getElementById('name-winer').innerHTML = newName;
+  	document.getElementById('name-winer').innerHTML = newName + "!";
   console.log('Wyświetlam imię gracza');
   	
 }
@@ -72,6 +72,6 @@ function closeModalLoser (){
 
 function openModalLoser(){
   document.getElementById('modal-loser').style.display = 'block';
-  document.getElementById('name-loser').innerHTML = newName;
+  document.getElementById('name-loser').innerHTML = newName + "!";
   console.log('Wyświetlam imię gracza');
 }

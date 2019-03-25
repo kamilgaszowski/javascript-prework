@@ -1,17 +1,5 @@
-var name, newName;
 
 
-
-function yourName() {
-  console.log('zamieniam imię gracza');
-  newName = document.getElementById('name-input').value;
-  name = document.getElementById('your-name').innerHTML = newName;
- 
-if (document.getElementById("name-input").value.length == 0)
-{
-    document.getElementById('your-name').innerHTML = 'Gracz 1';
-}
-}
 
 
 var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase, buttonYourName, buttonCongrat, buttonLoser;
@@ -66,6 +54,12 @@ function addOneScorePlayer(addScorePlayer) {
   if (addScorePlayer == 3){
     openModalCongrat();
   }
+  else if (addScorePlayer == 2) {
+    printMessage('Zdobyłeś 1 pkt!');
+  }
+  else if (addScorePlayer == 1) {
+    printMessage('Zdobyłeś 1 pkt!');
+  }
 }
 
 scoreComputer = 0;
@@ -75,6 +69,12 @@ function addOneScoreComputer(addScoreComputer) {
   console.log('dodałem ' + addScoreComputer +'pkt dla computera');
   if (addScoreComputer == 3){
     openModalLoser();
+  }
+   else if (addScoreComputer == 2) {
+    printMessage('Zdobyłem 1 pkt!');
+  }
+  else if (addScoreComputer == 1) {
+    printMessage('Zdobyłem 1 pkt!');
   }
 
 }
@@ -153,6 +153,7 @@ buttonYourName.addEventListener('click', function(){
   yourName();
   closeModal();
 });
+
 buttonErase.addEventListener('click', function(){ 
   clearMessages();
   openModal();

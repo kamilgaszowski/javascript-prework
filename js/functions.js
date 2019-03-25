@@ -5,7 +5,27 @@ function printMessage(msg){
 }
 
 
- 
+
+
+
+
+var name, newName;
+
+function yourName() {
+  console.log('zamieniam imię gracza');
+  newName = document.getElementById('name-input').value;
+  name = document.getElementById('your-name').innerHTML = newName;
+  
+	if (document.getElementById("name-input").value.length == 0){
+	    openModal();
+	} 
+
+	
+
+
+} 
+
+
 
 function clearMessages(){
 
@@ -16,6 +36,7 @@ function clearMessages(){
 	document.getElementById('icon-scissors-usr').style.display = 'none';
 	document.getElementById('icon-rock-usr').style.display = 'none';
 	document.getElementById('messages').innerHTML = '';	
+
 }
 
 function closeModal(){
@@ -23,11 +44,7 @@ function closeModal(){
 }
 
 function openModal (){
-	document.getElementById('player-result').innerHTML = 0;
-	document.getElementById('computer-result').innerHTML = 0;
-	document.getElementById('name-input').value = '';
-	document.getElementById('myModal').style.display = 'block';
-	document.getElementById('your-name').innerHTML = 'Gracz 1';
+	window.location.reload(true);
 }
 
 function closeModalCongrat (){
@@ -39,7 +56,10 @@ function closeModalCongrat (){
 }
 
 function openModalCongrat(){
-  document.getElementById('modal-congrat').style.display = 'block';
+  	document.getElementById('modal-congrat').style.display = 'block';
+  	document.getElementById('name-winer').innerHTML = newName;
+  console.log('Wyświetlam imię gracza');
+  	
 }
 
 function closeModalLoser (){
@@ -52,4 +72,6 @@ function closeModalLoser (){
 
 function openModalLoser(){
   document.getElementById('modal-loser').style.display = 'block';
+  document.getElementById('name-loser').innerHTML = newName;
+  console.log('Wyświetlam imię gracza');
 }

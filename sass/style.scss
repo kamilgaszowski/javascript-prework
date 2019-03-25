@@ -8,7 +8,19 @@ body {
 	line-height: 1.7;
 	font-size: 16px;
 	text-align: center;
+	background-color: #487eb0;
+	color: #ffffff;
 }
+
+header {
+	height: 100vh;
+}
+
+header h1 {
+	font-size: 60px;
+	margin: 0;
+}
+
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -24,22 +36,29 @@ body {
 }
 
 .result-box  {
-	margin: 20px 0;
+	margin: 10px 0;
 	display: flex;
 	justify-content: center;
 }
 
 .result {
 	margin: 0 50px;
-	font-size: 25px;
+	font-size: 36px;
+	
+	color: #33d9b2;
+}
+
+.result p {
+	margin: 0;
+
 }
 
 
 .big-hands i {
 	display: none;
-	color: #e74c3c;
+	color: #34ace0;
 	margin: 20px 30px;
-	font-size: 5em;
+	font-size: 10em;
 }
 
 .big-hands h3 {
@@ -47,17 +66,8 @@ body {
 }
 
 
-header {
-	height: 100vh;
-}
-
-header h1 {
-	font-size: 60px;
-}
-funkcj
-
 .buttons {
-	margin: 100px 0 50px 0;
+	margin: 30px 0 20px 0;
 
 }
 
@@ -70,84 +80,84 @@ funkcj
 	width: 90px;
 	height: 90px;
 	line-height: 90px;
-	transition: .5s;
+	transition: .2s ease-in, ;
 	cursor: pointer;
 }
 
 .buttons .fa-hand-paper {
 	position: relative;
-	color: #f3a683;
-	
+	color: #ffaf40;
 }
 
 
 
 .buttons .fa-hand-paper:hover {
-	border-radius: 5%;
-	
-	background-color: #0984e3;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.5) ;
+	color: #487eb0;
+	background-color: #ffaf40;
 }
 
 .buttons .fa-hand-paper:active {
-
-	box-shadow: 4px 4px  5px rgba(0, 0, 0, 0.6) ;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.1) ;
 }
-.buttons .fa-hande-paper::after {
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100px;
-	height: 50px;
-	border: 1px solid #000000;
-	color: #000000;
-	top: 10px;
-	left: 10px;
 
-}
 .buttons .fa-hand-scissors {
 	position: relative;
-	color: #d63031;
+	color: #ff4d4d;
 }
 
 .buttons .fa-hand-scissors:hover {
-	border-radius: 5%;
-	background-color: #fdcb6e;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.5) ;
+	color: #487eb0;
+	background-color: #ff4d4d;
 }
 
 .buttons .fa-hand-scissors:active {
-	box-shadow: 8px 4px  5px rgba(0, 0, 0, 0.6) ;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.1) ;
 }
 
 .buttons  .fa-hand-rock {
 	position: relative;
-	color: #00b894;
+	color: #3ae374;
 }
 
 .buttons .fa-hand-rock:hover {
-	border-radius: 5%;
-	background-color: #6c5ce7;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.5) ;
+	color: #487eb0;
+	background-color: #3ae374;
 }
 
 .buttons .fa-hand-rock:active {
-	box-shadow: 4px 4px  5px rgba(0, 0, 0, 0.6) ;
+	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.1) ;
 }
+
 .erase {
 	position: relative;
 }
-.fa-eraser {
+
+.fa-play-circle {
 	font-size: 60px;
 	color: red;
-	opacity: 0.5;
 	position: fixed;
 	top: 20px;
 	left: 50px;
-	border: 4px solid;
 	width: 80px;
 	height: 80px;
 	line-height: 80px;
+	background-color: transparent;
+	cursor: pointer;
+	transition: .5s;
 	border-radius: 50%;
 }
 
+ .fa-play-circle:hover {
+ 	border-radius: 50%;
+ 	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.5);
+ }
+
+.fa-play-circle:active {
+ 	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.1);
+ }
 
 .messages div:first-child {
 	font-size: 50px;
@@ -173,7 +183,7 @@ funkcj
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
@@ -251,6 +261,15 @@ funkcj
 	
 }
 
+#name-loser {
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+#name-winer {
+	text-transform: uppercase;
+	font-size: 28px;
+}
 
 
 

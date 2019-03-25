@@ -8,7 +8,6 @@ function printMessage(msg){
 
 
 
-
 var name, newName;
 
 function yourName() {
@@ -37,41 +36,3 @@ function clearMessages(){
 
 }
 
-function closeModal(){
-  document.getElementById('myModal').style.display = 'none';
-}
-
-function openModal (){
-	window.location.reload(true);
-}
-
-function closeModalCongrat (){
-	document.getElementById('player-result').innerHTML = 0;
-	document.getElementById('computer-result').innerHTML = 0;
-	document.getElementById('name-input').value = '';
-	document.getElementById('modal-congrat').style.display = 'none';
-	document.getElementById('messages').innerHTML = newName + ', tym razem nie pozwolę Ci wygrać';	
-	
-}
-
-function openModalCongrat(){
-  	document.getElementById('modal-congrat').style.display = 'block';
-  	document.getElementById('name-winer').innerHTML = newName + "!";
-  console.log('Wyświetlam imię gracza');
-  	
-}
-
-function closeModalLoser (){
-	document.getElementById('player-result').innerHTML = 0;
-	document.getElementById('computer-result').innerHTML = 0;
-	document.getElementById('name-input').value = '';
-	document.getElementById('modal-loser').style.display = 'none';
-	document.getElementById('messages').innerHTML = newName + ', znowu przegrasz :)';	
-	
-}
-
-function openModalLoser(){
-  document.getElementById('modal-loser').style.display = 'block';
-  document.getElementById('name-loser').innerHTML = newName + "!";
-  console.log('Wyświetlam imię gracza');
-}

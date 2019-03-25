@@ -1,8 +1,20 @@
+var name, newName;
+
+function yourName() {
+  console.log('zamieniam imię gracza');
+  newName = document.getElementById('name-input').value;
+  name = document.getElementById('your-name').innerHTML = newName;
+  
+  if (document.getElementById("name-input").value.length == 0){
+      newName = 'Gracz';
+      document.getElementById('your-name').innerHTML = newName;
+  } 
+
+} 
 
 
 
-
-var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase, buttonYourName, buttonCongrat, buttonLoser;
+var buttonName, buttonPaper, buttonRock, buttonScissors, buttonErase, buttonYourName, buttonCongrat, buttonLoser, scorePlayer, scoreComputer, addScoreComputer, addScorePlayer;
 
 buttonErase = document.getElementById('button-erase');
 buttonRock = document.getElementById('button-rock');
@@ -20,7 +32,7 @@ function buttonClicked(buttonName) {
   console.log(buttonName + ' został kliknięty');
 
 
-var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput, scorePlayer, scoreComputer, addScoreComputer, addScorePlayer;
+var moveId, playerMove, computerMove, computerMove, playerMove, randomNumber, playerInput;
 
 
   
@@ -166,3 +178,60 @@ buttonScissors.addEventListener('click', function(){
   buttonClicked('nożyce'); 
  
 });
+
+
+function closeModal(){
+  document.getElementById('myModal').style.display = 'none';
+}
+
+function openModal (){
+  window.location.reload(true);
+}
+
+function closeModalCongrat (){
+  clearMessages();
+  document.getElementById('player-result').innerHTML = 0;
+  document.getElementById('computer-result').innerHTML = 0;
+  document.getElementById('name-input').value = '';
+  document.getElementById('modal-congrat').style.display = 'none';
+  document.getElementById('messages').innerHTML = newName + ', tym razem nie pozwolę Ci wygrać';  
+  
+  
+}
+
+function openModalCongrat(){
+    document.getElementById('modal-congrat').style.display = 'block';
+    document.getElementById('name-winer').innerHTML = newName + "!";
+    document.getElementById('computer-result-winer').innerHTML = document.getElementById('computer-result').innerHTML;
+    document.getElementById('player-result-winer').innerHTML = document.getElementById('player-result').innerHTML;
+    
+  console.log('Wyświetlam imię gracza');
+    
+}
+
+function closeModalLoser (){
+  clearMessages();
+  document.getElementById('player-result').innerHTML = 0;
+  document.getElementById('computer-result').innerHTML = 0;
+  document.getElementById('name-input').value = '';
+  document.getElementById('modal-loser').style.display = 'none';
+  document.getElementById('messages').innerHTML = newName + ', znowu przegrasz :)'; 
+  
+  
+}
+
+function openModalLoser(){
+  document.getElementById('modal-loser').style.display = 'block';
+  document.getElementById('name-loser').innerHTML = newName + "!";
+  document.getElementById('computer-result-loser').innerHTML = document.getElementById('computer-result').innerHTML;
+  document.getElementById('player-result-loser').innerHTML = document.getElementById('player-result').innerHTML;
+    
+ 
+  console.log('Wyświetlam imię gracza');
+}
+
+
+
+
+
+

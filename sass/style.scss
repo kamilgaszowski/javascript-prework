@@ -159,13 +159,18 @@ header h1 {
  	box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.1);
  }
 
-.messages div:first-child {
+
+
+
+.messages div:nth-child(1) {
 	font-size: 50px;
 }
 
-.messages div:last-child {
+.messages div:nth-child(2) {
 	font-size: 20px;
 }
+
+
 
 .messages i {
 	display: none;

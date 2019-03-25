@@ -20,9 +20,6 @@ function yourName() {
 	    openModal();
 	} 
 
-	
-
-
 } 
 
 
@@ -52,7 +49,8 @@ function closeModalCongrat (){
 	document.getElementById('computer-result').innerHTML = 0;
 	document.getElementById('name-input').value = '';
 	document.getElementById('modal-congrat').style.display = 'none';
-	document.getElementById('your-name').innerHTML = 'Gracz 1';
+	document.getElementById('messages').innerHTML = newName + ', tym razem nie pozwolę Ci wygrać';	
+	
 }
 
 function openModalCongrat(){
@@ -67,7 +65,8 @@ function closeModalLoser (){
 	document.getElementById('computer-result').innerHTML = 0;
 	document.getElementById('name-input').value = '';
 	document.getElementById('modal-loser').style.display = 'none';
-	document.getElementById('your-name').innerHTML = 'Gracz 1';
+	document.getElementById('messages').innerHTML = newName + ', znowu przegrasz :)';	
+	
 }
 
 function openModalLoser(){

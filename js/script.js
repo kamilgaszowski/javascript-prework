@@ -137,12 +137,12 @@ displayResult(playerMove, computerMove);
 
 buttonCongrat.addEventListener('click', function(){ 
   closeModalCongrat();
-  openModal();
+ 
 });
 
 buttonLoser.addEventListener('click', function(){ 
   closeModalLoser();
-  openModal();
+
 });
 
 buttonYourName.addEventListener('click', function(){ 

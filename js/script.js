@@ -141,8 +141,6 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
-
-
 }
 
 
@@ -165,7 +163,8 @@ buttonYourName.addEventListener('click', function(){
 buttonErase.addEventListener('click', function(){ 
   clearMessages();
   openModal();
-});
+}
+);
 buttonRock.addEventListener('click', function(){ 
   buttonClicked('kamień'); 
 
@@ -200,11 +199,12 @@ function closeModalCongrat (){
 }
 
 function openModalCongrat(){
+
     document.getElementById('modal-congrat').style.display = 'block';
     document.getElementById('name-winer').innerHTML = newName + "!";
     document.getElementById('computer-result-winer').innerHTML = document.getElementById('computer-result').innerHTML;
     document.getElementById('player-result-winer').innerHTML = document.getElementById('player-result').innerHTML;
-    
+   
   console.log('Wyświetlam imię gracza');
     
 }

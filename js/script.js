@@ -20,14 +20,15 @@ function yourName() {
 
 
 
+
+const buttonPaper = document.getElementById('button-paper'),
+    buttonRock = document.getElementById('button-rock'), 
+    buttonScissors = document.getElementById('button-scissors'),
+    buttonErase = document.getElementById('button-erase'), 
+    buttonYourName = document.getElementById('button-name'),
+    buttonCongrat = document.getElementById('button-congrat'),
+    buttonLoser = document.getElementById('button-loser');
 let buttonName, 
-  buttonPaper = document.getElementById('button-paper'),
-  buttonRock = document.getElementById('button-rock'), 
-  buttonScissors = document.getElementById('button-scissors'),
-  buttonErase = document.getElementById('button-erase'), 
-  buttonYourName = document.getElementById('button-name'),
-  buttonCongrat = document.getElementById('button-congrat'),
-  buttonLoser = document.getElementById('button-loser');
   scorePlayer = 0, 
   scoreComputer = 0;
  

@@ -80,7 +80,7 @@ function buttonClicked(buttonName) {
 /**
  * Describe this function...
  */
-  let moveId;
+ 
   function getMoveName(moveId) {
     console.log('wywołano funkcję moveName z argumentem: ' + moveId);
     if (moveId == 1) {

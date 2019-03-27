@@ -28,8 +28,7 @@ const buttonPaper = document.getElementById('button-paper'),
     buttonYourName = document.getElementById('button-name'),
     buttonCongrat = document.getElementById('button-congrat'),
     buttonLoser = document.getElementById('button-loser');
-let buttonName, 
-  scorePlayer = 0, 
+let scorePlayer = 0, 
   scoreComputer = 0;
  
 

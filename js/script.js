@@ -27,7 +27,7 @@ let buttonName,
   buttonErase = document.getElementById('button-erase'), 
   buttonYourName = document.getElementById('button-name'),
   buttonCongrat = document.getElementById('button-congrat'),
-  buttonLoser = document.getElementById('button-loser'),
+  buttonLoser = document.getElementById('button-loser');
   scorePlayer = 0, 
   scoreComputer = 0;
  
@@ -138,7 +138,7 @@ function buttonClicked(buttonName) {
   scorePlayer = document.getElementById('player-result').innerHTML;
   scoreComputer = document.getElementById('computer-result').innerHTML;
   playerMove = buttonName;
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);

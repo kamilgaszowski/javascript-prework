@@ -6,24 +6,6 @@ function printMessage(msg){
 
 
 
-
-
-var name, newName;
-
-function yourName() {
-  console.log('zamieniam imię gracza');
-  newName = document.getElementById('name-input').value;
-  name = document.getElementById('your-name').innerHTML = newName;
-  
-	if (document.getElementById("name-input").value.length == 0){
-	    newName = 'Gracz';
-	    document.getElementById('your-name').innerHTML = newName;
-	} 
-
-} 
-
-
-
 function clearMessages(){
 
 	document.getElementById('icon-paper-comp').style.display = 'none';

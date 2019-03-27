@@ -95,8 +95,7 @@ function buttonClicked(buttonName) {
     }
   }
 
-  let playerMove, 
-    computerMove; 
+  
   function displayResult(playerMove, computerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + playerMove + ', ' + computerMove);
     if (computerMove == 'kamień'){
